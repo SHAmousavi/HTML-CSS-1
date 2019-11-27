@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.rijksoverheid.nl/binaries/content/assets/rijksoverheid/iconen/favicon.ico" type="image/x-icon"/>
+    <title>Document</title>
+    <style>
+    .card1 {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 35%;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-left: 2%;
+  margin-top: 3%;
+  margin-bottom: -1%;
+
+}
+
+.card1 > hr {
+  margin-right: 0;
+  margin-left: 0;
+
+}
+
+.card1 > .list-group:first-child .list-group-item:first-child {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  
+}
+
+.card1 > .list-group:last-child .list-group-item:last-child {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+
+}
+.card-body1 {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin-right: 0%;
+
+}
+
+
+.card-subtitle1 {
+  margin-top: -0.375rem;
+  margin-bottom: 0;
+}
+.card-text1:last-child {
+  margin-bottom: 0;
+  
+}
+.card-link1:hover {
+  text-decoration: none;
+  
+}
+
+.card-link1 + .card-link1 {
+  margin-left: 1.25rem;
+  
+}
+.card-titl1 {
+  margin-bottom: 2%;
+  margin-top: 2%;
+
+}
+
+
+
+.card2 {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 33%;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  background: #f3f3f3;
+   
+
+}
+
+.card3 {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 30%;
+  word-wrap: break-word;
+  background-color: rgb(255, 255, 255);
+  background-clip: border-box;
+ margin: 1%;
+   
+
+}
+
+
+
+
+
+
+
+.card6 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+
+  border: 2px solid rgb(128, 128, 128);
+  margin-left:2% ;
+}
+.container6 {
+  padding: 2px 16px;
+  text-align: center;
+  line-height: 200%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: black;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}     
+
+
+
+
+
+
+
+
+    .header {
+        display: inline;
+        padding: 1%;
+    }
+ #ul {
+     color: white;
+     background-color: #01689b;
+     padding-bottom: 2%;
+     padding-top:2%;
+     text-align: right;
+     margin-top: 0%;
+ }
+ .aheader {
+     color: white;
+     text-decoration: none;
+     font-size: 120%;
+ }
+ 
+ a.languge:hover {
+  text-decoration: none;
+  color: #007bc7;
+ }
+ 
+ a:hover {
+    text-decoration: underline;
+    color:black;
+ }
+ body {
+    font-family: "RO Sans",Calibri,sans-serif;
+    
+ }
+ @media (min-width: 1200px){
+ .body {
+    font-size: 112.5%;
+ }
+ }
+ @media (min-width: 1200px){
+ header {
+    font-size: 112.5%;
+ }
+ }
+ #icon {
+     width: 18%;
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: -20%;
+
+ }
+ .heder {
+     float: left;
+     display: inline;
+     font-family: "RO Icons";
+ }
+ .aborder {
+     color:#767676;
+     text-decoration: none;
+     position: relative;
+    display: block;
+    font-family: "RO Sans",Calibri,sans-serif;
+    
+    line-height: 1.500;
+    font-size: 100%;
+    font-weight: normal;
+ }
+ .border {
+
+    font-weight: bold;
+    font-size: 1.125rem;
+    list-style-type: none;
+
+    font-family: "RO Icons";
+ }
+ .backrgound {
+  background-color: rgb(20, 20, 20);
+
+ }
+ .uborder {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 1.125rem;
+    text-decoration: none;
+    width: auto;
+    line-height: 1.625rem;
+    padding-top: 5%;
+ }
+ .article3 {
+     background: url(https://www.rijksoverheid.nl/binaries/widescreen/content/gallery/rijksoverheid/attentie-afbeeldingen/onderwerpen/z/zorgverzekering-hero.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     padding-top: -5%;
+     padding-bottom: 3%;
+     background-size: 125% 75%;
+ }
+ .span {
+     font-size: 100%;
+     color: rgb(53, 50, 50);
+     padding-left: -10;
+ }
+ #veel {
+     list-style-type: none;
+     font-size: 150%;
+     color: rgb(0, 0, 0);
+     
+ }
+ #article4 {
+ float: right;
+ margin-top: 1%;
+
+ }
+ pre {
+     font-family:inherit;
+     margin-bottom: 0%;
+  margin-top: 0%;
+  padding-right: 10%;
+ }
+ #ad {
+ margin-left: 3%;
+ margin-bottom: 3%;
+ color: rgb(255, 251, 251);
+ font-size: 80%;
+ }
+ ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 4%;
+}
+.aheade{
+    text-decoration: none;
+    
+}
+#h3 {
+ 
+ 
+font-weight: bold;
+}
+#p {
+color: black;
+line-height: 1.375em;
+}
+.p2{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: black;
+    line-height: 1.375em;
+    font-size: 110%;
+    text-decoration: white;
+   
+}
+h3 {
+    color: #01689b;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.8em;
+    line-height: 1.2em;}
+
+    a.aheade:hover{
+    text-decoration: underline;
+    color: #01689b;
+    }
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        background: #f3f3f3;
+        margin-top: -5%;
+    }
+   
+    .imagecard {
+        color:#01689b;
+    }
+    a.imagecard:hover {
+        text-decoration-color:#767676;
+        color: #767676;
+    }
+    .flex1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .article5 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+    }
+    a#h3:visited {
+      color: #767676;
+    }
+    </style>
+</head>
+
+    <header>
+        <article>
+                <img id="icon" src="http://www.argentconsulting.nl/wp-content/uploads/2012/06/Rijkslogo.png"
+                 alt="Rijksoverheid" id="logotype">
+        </article>
+        <article class="article3">
+    <article class="article2">
+        
+<ul id="ul">
+    <li class="heder"><a class="aheader" href="https://www.rijksoverheid.nl/">Home<a></li>
+        <li class="header"><a class="aheader" href="https://www.rijksoverheid.nl/actueel">Actueel</a></li>
+        <li class="header"><a class="aheader" href="https://www.rijksoverheid.nl/onderwerpen">Onderwerpen</a></li>
+        <li class="header"><a class="aheader" href="https://www.rijksoverheid.nl/ministeries">Ministeries</a></li>
+        <li class="header"><a class="aheader" href="https://www.rijksoverheid.nl/regering">Regering</a></li>
+        <li class="header"><a class="aheader" href="https://www.rijksoverheid.nl/documenten">Documenten</a></li>
+        <li class="header"><a class="aheader" href="https://www.rijksoverheid.nl/doe-mee">Doe mee</a></li>
+      </ul>
+      </article>
+      <article>
+      <article id="article4">
+          <form class="example" action="" style="margin:auto;max-width:300px">
+              <input type="text" placeholder="Zoeken" name="search2">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+                
+           </article>
+      <div class="card1" style="width: 18rem;">
+            <div class="card-body1">
+                
+                <ul>
+                        
+                    <div class="card-titl1"><span id="veel">Veel bekeken</span></div>
+                    <div class="card-title1"><a class="aborder" href="https://www.rijksoverheid.nl/onderwerpen/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2019"><span class="span">> </span> Bedragen minimumloon 2019</a></div>
+                    <div class="card-title1"><a class="aborder" href="https://www.rijksoverheid.nl/onderwerpen/zorgverzekering/vraag-en-antwoord/wat-verandert-er-in-het-basispakket-van-de-zorgverzekering-in-2020"><span class="span">> </span>Uitbreiding basispakket  zorgverzekering</a></div>
+                    <div class="card-title1"><a class="aborder" href="https://www.rijksoverheid.nl/onderwerpen/aanpak-stikstof/maatregelen-om-stikstofprobleem-op-te-lossen"><span class="span">> </span> Maatregelen om stikstof probleem op te <pre>  lossen</pre></a></div>
+                    <div class="card-title1"><a class="aborder" href="https://www.rijksoverheid.nl/onderwerpen/antibioticaresistentie"><span class="span">> </span> Antibioticaresistentie</a></div>
+                    <div class="card-title1"><a class="aborder" href="https://www.rijksoverheid.nl/onderwerpen/schoolvakanties"><span class="span">> </span> Schoolvakanties</a></div>
+              </ul>
+            </div>
+          </div>
+          </article>
+          <p id="ad">© Hollandse Hoogte</p>
+    </header>
+    <body class="body">
+     <article>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
+        </article> 
+    </article>
+    <article>
+    <ul class="flex">
+        <li class="card2"><a class="aheade" href="https://www.rijksoverheid.nl/onderwerpen/themas/belastingen-uitkeringen-en-toeslagen"><div class="div"><h3 id="h3">Belastingen, uitkeringen en <br>toeslagen</h3><p id="p">Bijstand, AOW, WW-uitkering,<br> Inkomstenbelasting, Wajong ...</p></div></a></li>    
+        <li class="card2"><a class="aheade"href="https://www.rijksoverheid.nl/onderwerpen/themas/bouwen-en-wonen"><div class="div"><h3 id="h3">Bouwen en wonen</h3><p id="p">Huurwoning, Huurverhoging, Koopwoning, Energielabel, Bouwregelgeving...</p></div></a></li>
+        <li class="card2"><a class="aheade"href="https://www.rijksoverheid.nl/onderwerpen/themas/economie"><div class="div"><h3 id="h3">Economie</h3><p id="p">Ondernemen en innovatie, Overheidsfinanciën, Duurzame economie, Zelfstandigen zonder <br>personeel ...</p></div></a></li>
+        <li class="card2"><a class="aheade" href="https://www.rijksoverheid.nl/onderwerpen/themas/familie-zorg-en-gezondheid"><div class="div"><h3 id="h3">Familie, zorg en gezondheid</h3><p id="p">Zorgverzekering, Zorg en ondersteuning thuis, Trouwen, samenlevingscontract en geregistreerd partnerschap ...</p> </div></a></li>
+        <li class="card2">
+            <a class="aheade"href="https://www.rijksoverheid.nl/onderwerpen/themas/internationale-samenwerking">
+              <div class="div">
+                <h3 id="h3">Internationale samenwerking</h3>
+                    <p id="p">Europese Unie, Brexit, Mensenrechten, Handelsverdragen EU ...</p>
+                  </div>
+            </a>
+          </li>
+        <li class="card2">
+            <a class="aheade" href="https://www.rijksoverheid.nl/onderwerpen/themas/klimaat-milieu-en-natuur">
+              <div class="div">
+                <h3 id="h3">Klimaat, milieu en natuur</h3>
+                    <p id="p">Gaswinning in Groningen, Klimaatakkoord, Duurzame energie, Dierenwelzijn ...</p>
+                  </div>
+            </a>
+          </li>
+          <li class="card2">
+            <a class="aheade" href="https://www.rijksoverheid.nl/onderwerpen/themas/migratie-en-reizen">
+              <div class="div">
+                <h3 id="h3">Migratie en reizen</h3>
+                    <p id="p">Paspoort en identiteitskaart, Nederlandse nationaliteit, Reizen met kinderen ...</p>
+                  </div>
+            </a>
+          </li>
+          <li class="card2">
+            <a class="aheade" href="https://www.rijksoverheid.nl/onderwerpen/themas/onderwijs">
+              <div class="div">
+                <h3 id="h3">Onderwijs</h3>
+                    <p id="p">Schoolvakanties, Eindexamens, Hoger onderwijs, Basisonderwijs, Werken in het onderwijs ...</p>
+                  </div>
+            </a>
+          </li>
+          <li class="card2">
+            <a class="aheade" href="https://www.rijksoverheid.nl/onderwerpen/themas/overheid-en-democratie">
+              <div class="div">
+                <h3 id="h3">Overheid en democratie</h3>
+                    <p id="p">Privacy en persoonsgegevens, Gemeenten, Provincies, Koninklijk Huis ...</p>
+                  </div>
+            </a>
+          </li>
+          <li class="card2">
+            <a class="aheade" href="https://www.rijksoverheid.nl/onderwerpen/themas/recht-veiligheid-en-defensie">
+              <div class="div">
+                <h3 id="h3">Recht, veiligheid en defensie</h3>
+                    <p id="p">Identiteitsfraude, Terrorisme en nationale<br> veiligheid, Ouderlijk gezag en voogdij ...</p>
+                  </div>
+            </a>
+          </li>
+          <li class="card2">
+            <a class="aheade" href="https://www.rijksoverheid.nl/onderwerpen/themas/verkeer-en-vervoer">
+              <div class="div">
+                <h3 id="h3">Verkeer en vervoer</h3>
+                    <p id="p">Rijbewijs, Verkeersregels, Openbaar vervoer, Verkeersveiligheid, Bijzondere voertuigen ...</p>
+                  </div>
+            </a>
+          </li>
+          <li class="card2">
+            <a class="aheade" href="https://www.rijksoverheid.nl/onderwerpen/themas/werk">
+              <div class="div">
+                <h3 id="h3">Werk</h3>
+                    <p id="p">Zelfstandigen zonder personeel (zzp), Minimumloon, Ouderschapsverlof, Werktijden, Ontslag ...</p>
+                  </div>
+            </a>
+          </li>
+    </ul>
+    </article>
+    </article>
+    <br>
+    <br>
+    <hr>
+    <h2 style="margin-left: 1%; font-weight: bold;">Uitgelicht</h2>
+    <article class="flex1">
+       <!-- Card Dark -->
+<div class="card" style="width: 30%; margin-top: 5%; margin-left: 1%; background-color: white;">
+
+    <!-- Card image -->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://www.rijksoverheid.nl//binaries/medium/content/gallery/rijksoverheid/banner-afbeeldingen/home/2018/nl-alert-hand-telefoon.jpg" alt="Card image cap">
+
+    </div>
+  
+    <!-- Card content -->
+    <div class="card-body elegant-color white-text rounded-bottom">
+  
+    <a class="imagecard" href="https://crisis.nl/nl-alert">
+        <h1>Direct informatie bij een noodsituatie</h1>
+     
+        <p class="p2">2 december verstuurt de overheid een NL-Alert controlebericht. Staat jouw telefoon al goed ingesteld?</p>
+    </a>
+      
+  
+    </div>
+  
+  </div>
+
+
+
+
+
+    <!-- Card Dark -->
+<div class="card" style="width: 30%; margin-top: 5%; margin-left: 1%; margin-right: 3%; margin-left: 4%;">
+
+    <!-- Card image -->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://www.rijksoverheid.nl//binaries/medium/content/gallery/rijksoverheid/banner-afbeeldingen/home/2019/campagne-wat-kan-mij-helpen-amber.jpg" alt="Card image cap">
+
+    </div>
+  
+    <!-- Card content -->
+    <div class="card-body elegant-color white-text rounded-bottom">
+  
+    <a class="imagecard" href="https://www.watkanmijhelpen.nl/">
+        <h1>www.watkanmijhelpen.nl</h1>
+        <p class="p2"> Weet welke hulp u kunt krijgen na een ongewenste seksuele ervaring. Lees het op watkanmijhelpen.nl.</p>
+    </a>
+      
+  
+    </div>
+  
+  </div>
+  
+
+
+
+
+
+
+
+
+    <!-- Card Dark -->
+<div class="card" style="width: 30%; margin-top: 5%; margin-left: 1%; background-color: white;">
+
+    <!-- Card image -->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://www.rijksoverheid.nl/binaries/medium/content/gallery/rijksoverheid/banner-afbeeldingen/home/2019/woninginbraak-preventie-maak-het-ze-niet-te-makkelijk-campagne-2.jpg" alt="Card image cap">
+
+    </div>
+  
+    <!-- Card content -->
+    <div class="card-body elegant-color white-text rounded-bottom">
+  
+    <a class="imagecard" href="https://www.maakhetzeniettemakkelijk.nl/woninginbraak">
+        <h1>Voorkom woninginbraak</h1>
+        <p class="p2">
+            Houd inbrekers buiten de deur. Gebruik alleen goedgekeurde sloten op deuren en ramen.</p>
+    </a>
+      
+  
+    </div>
+  
+  </div>
+  <!-- Card Dark -->
+    </article>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <h2 style="font-weight: bold; margin-left: 1%;">Nieuws</h2>
+    <article class="article5">
+
+<br>
+<li class="card3">
+    <a class="aheade" href="https://www.rijksoverheid.nl/actueel/nieuws/2019/11/25/minister-informeert-tweede-kamer-over-gang-van-zaken-rond-hawija">
+      <div class="div">
+        <h3 id="h3">
+
+            Minister informeert Tweede Kamer over gang van zaken rond Hawija</h3>
+            <p id="p" style="font-weight: bold;">26-11-2019 | 15:01</p>
+            <p id="p">Minister Ank Bijleveld heeft de Tweede Kamer vandaag geïnformeerd over hoe de informatie over de wapeninzet in Hawija met de ...</p>
+            
+          </div>
+    </a>
+  </li>
+
+
+
+
+
+  <li class="card3">
+    <a class="aheade" href="https://www.rijksoverheid.nl/actueel/nieuws/2019/11/25/ministerie-van-binnenlandse-zaken-gaat-hoogte-en-duur-uitkeringen-van-politieke-ambtsdragers-publiceren">
+      <div class="div">
+        <h3 id="h3">
+
+            Ministerie van Binnenlandse Zaken gaat hoogte en duur uitkeringen van politieke ambtsdragers publiceren</h3>
+            <p id="p" style="font-weight: bold;">26-11-2019 | 08:10</p>
+            <p id="p">Het ministerie van Binnenlandse Zaken en Koninkrijks­relaties (BZK) gaat vanaf januari 2020 jaarlijks een overzicht publiceren ...</p>
+          </div>
+    </a>
+  </li>
+
+
+
+
+
+
+  <li class="card3">
+    <a class="aheade" href="https://www.rijksoverheid.nl/actueel/nieuws/2019/11/25/voorkom-illegale-handel-in-voorwerpen-van-beschermde-planten-en-dieren-en-lever-ze-in">
+      <div class="div">
+        <h3 id="h3">      Voorkom illegale handel in voorwerpen van beschermde planten en dieren en lever ze in</h3>
+        <p id="p" style="font-weight: bold;">26-11-2019 | 08:00</p>
+        <p id="p">Vandaag is bij het RVO kantoor in Den Haag het eerste Nederlandse inleverpunt voor voorwerpen van beschermde planten en dieren ...</p>
+          </div>
+    </a>
+  </li>
+
+
+
+
+
+
+
+  <li class="card3">
+    <a class="aheade" href="https://www.rijksoverheid.nl/actueel/nieuws/2019/11/25/rekenregels-per-januari-2020">
+      <div class="div">
+        <h3 id="h3">      Rekenregels per januari 2020</h3>
+        <p id="p" style="font-weight: bold;">25-11-2019 | 20:43</p>
+            <p id="p">In deze rekenregels zijn de gevolgen verwerkt van aanpassingen in het bruto wettelijk minimumloon per 1 januari 2020 voor ...</p>
+          </div>
+    </a>
+  </li>
+
+
+
+
+
+
+  <li class="card3">
+    <a class="aheade" href="https://www.rijksoverheid.nl/actueel/nieuws/2019/11/25/kabinet-investeert-in-dienstverlening-grensinfopunten">
+      <div class="div">
+        <h3 id="h3">
+
+            Kabinet investeert in dienstverlening grensinfopunten</h3>
+            <p id="p" style="font-weight: bold;">25-11-2019 | 15:55</p>
+            <p id="p">Het kabinet gaat de grensinformatiepunten vanaf komend jaar financieel ondersteunen. De tien infopunten, verspreid langs de ...</p>
+          </div>
+    </a>
+  </li>
+
+
+
+
+
+
+
+  <li class="card3">
+    <a class="aheade" href="https://www.rijksoverheid.nl/actueel/nieuws/2019/11/25/inschrijving-subsidieregeling-sanering-varkenshouderijen-geopend">
+      <div class="div">
+        <h3 id="h3">
+
+           
+
+      Inschrijving Subsidieregeling sanering varkenshouderijen geopend</h3>
+      <p id="p" style="font-weight: bold;">25-11-2019 | 13:00</p>
+            <p id="p">Varkenshouders in veedichte gebieden kunnen zich vanaf maandag 25 november bij de Rijksdienst voor Ondernemend Nederland ...</p>
+          </div>
+    </a>
+  </li>
+    </article>
+    <br>
+    <br>
+    <br>
+    <a href="https://www.rijksoverheid.nl/actueel/nieuws" style="color: #767676; font-size: 135%; font-weight: bold; margin-left: 2%;">> Meer nieuws</a>
+    <br>
+    <br>
+    <br>
+    <article style="display: flex; flex-wrap: wrap;">
+<div class="card6">
+  <div class="container6">
+    <a style="text-decoration: none;" href="https://www.rijksoverheid.nl/contact" >
+    <h1 style="color: #1b5e84; font-weight: bold; font-size: 300%;">Vragen?</h1>
+    <p style="font-size: 250%; color: black; font-weight: 530;">Bel Informatie Rijksoverheid:</p>
+    <h1 style="color: #1b5e84; font-weight: bold; font-size: 350%;">1400</h1>
+  </a>
+  </div>
+</div>
+
+
+
+<div class="card6">
+    <div class="container6">
+      <a style="text-decoration: none;" href="https://www.rijksoverheid.nl/contact" >  
+        <br>
+        <p style="font-size: 200%; color: black; font-weight: 530; margin-bottom: 11%;">Meld u aan voor de</p>
+        
+      <h1 style="color: #a90061; font-weight: bold; font-size: 300%; line-height: 80%;">Nieuwsbrief Regeringsnieuws</h1>
+      <br>
+    </a>
+    </div>
+  </div>
+</article>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <article style="background: #01689b; display: flex;
+    flex-wrap:wrap; ">
+  <p style="font-size:200%; padding-top: 2%; color: white; padding-left: 1%;">De Rijksoverheid. Voor Nederland
+    </p>
+    
+<ul style="margin-left:30%; padding: 1%;">
+  <li style="color:white ; list-style-type: none; font-size: 150%; font-weight: bold; ">Service</li>
+  <li style="  font-size: 130%; list-style-type: none;"><a href="https://www.rijksoverheid.nl/contact" style="color:white ;">Contact</a></li>
+  <li style="  font-size: 130%; list-style-type: none;"><a href="https://www.rijksoverheid.nl/abonneren" style="color:white ;">Abonneren</a></li>
+  <li style="  font-size: 130%; list-style-type: none;"><a href="https://www.rijksoverheid.nl/rss" style="color:white ;">RSS</a></li>
+  <li style="  font-size: 130%; list-style-type: none;"><a href="https://www.rijksoverheid.nl/vacatures" style="color:white ;">Vacatures</a></li>
+  <li style="  font-size: 130%; list-style-type: none;"><a href="https://www.rijksoverheid.nl/sitemap" style="color:white ;">Sitemap</a></li>
+  <li style="  font-size: 130%; list-style-type: none;"><a href="https://www.rijksoverheid.nl/help" style="color:white ;">Help</a></li>
+  <li style="  font-size: 130%; list-style-type: none;"><a href="https://www.rijksoverheid.nl/archief" style="color:white ;">Archief</a></li>
+</ul>
+<ul style="float: right; margin-bottom: 4%; padding-top: 1%;"> 
+  <li style="color:white ; list-style-type: none; font-size: 150%; font-weight: bold;">Over deze site    </li>
+  <li style="  font-size: 130%; list-style-type: none;"><a href="https://www.rijksoverheid.nl/over-rijksoverheid-nl" style="color:white ;">Over Rijksoverheid.nl</a></li>
+  <li style="  font-size: 130%; list-style-type: none;"><a href="https://www.rijksoverheid.nl/wetten-en-regelingen" style="color:white ;">Wetten en regelingen</a></li>
+  <li style="  font-size: 130%; list-style-type: none;"><a href="https://www.rijksoverheid.nl/wetten-en-regelingen" style="color:white ;">Wetten en regelingen</a></li>
+  <li style="  font-size: 130%; list-style-type: none;"><a href="https://www.rijksoverheid.nl/copyright" style="color:white ;">Copyright</a></li>
+  <li style="  font-size: 130%; list-style-type: none;"><a href="https://www.rijksoverheid.nl/privacy" style="color:white ;" >Privacy</a></li>
+  <li style="  font-size: 130%; list-style-type: none;"><a href="https://www.rijksoverheid.nl/cookies" style="color:white ;">Cookies</a></li>
+  <li style="  font-size: 130%; list-style-type: none;"><a href="https://www.rijksoverheid.nl/toegankelijkheid" style="color:white ;">Toegankelijkheid</a></li>
+  <li style="  font-size: 130%; list-style-type: none;"><a href="https://www.rijksoverheid.nl/opendata" style="color:white ;">Open data</a></li>
+</ul>
+
+
+
+
+
+
+    </article>
+    <br>
+    <br>
+   
+    <article>
+    <ul style="display: flex; flex-wrap:wrap; margin-left: 22%;">
+    <li style="list-style-type:none; color: black; font-weight: bold; font-size: 100%; padding:5px 10px 5px 10px; margin:5px 10px 5px 0;">Nederlands</li>
+    <li style="list-style-type:none; background: white; border:1px solid #b2d7ee; padding:5px 10px 5px 10px; margin:5px 10px 5px 0;"><a class="languge" href="https://www.government.nl/">English</a></li>
+    <li style="list-style-type:none; background: white; border:1px solid #b2d7ee; padding:5px 10px 5px 10px; margin:5px 10px 5px 0;"><a class="languge" href="https://www.gobiernodireino.nl/"> Papiamento</a></li>
+    <li style="list-style-type:none; background: white; border:1px solid #b2d7ee; padding:5px 10px 5px 10px; margin:5px 10px 5px 0;"><a class="languge" href="https://www.gobiernodireino.nl/">Papiamentu</a></li>
+    <li style="list-style-type:none; background: white; border:1px solid #b2d7ee; padding:5px 10px 5px 10px; margin:5px 10px 5px 0;"><a class="languge" href="https://www.rijksoverheid.nl/onderwerpen/overheidscommunicatie/nederlandse-gebarentaal">Nederlandse Gebarentaal</a></li>
+    
+  </ul>
+      </article>
+</body>
+</html>
+
+
+
+
+
+
+
+
